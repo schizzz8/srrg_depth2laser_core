@@ -39,7 +39,6 @@ endif ()
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   srrg_core
-  srrg_core_map
 )
 
 ## System dependencies are found with CMake's conventions
@@ -141,7 +140,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES srrg_depth2laser_core_library
-  CATKIN_DEPENDS srrg_core srrg_core_map
+  CATKIN_DEPENDS srrg_core
 #  DEPENDS system_lib
 )
 
