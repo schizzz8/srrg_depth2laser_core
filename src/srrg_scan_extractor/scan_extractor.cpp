@@ -54,7 +54,7 @@ namespace srrg_depth2laser_core{
     _K(2,2) = 1;
 
     _invK = _K.inverse();
-    cerr << "Camera Matrix: " << _K << endl;
+    cerr << "Camera Matrix:" << endl << _K << endl;
 
     float cx = (float) fs["CameraTransform.x"];
     float cy = (float) fs["CameraTransform.y"];
